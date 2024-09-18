@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewheading"
+        android:layout_width="92dp"
+        android:layout_height="26dp"
+        android:text="S22 Present"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.054" />
+
+    <Button
+        android:id="@+id/buttonNotify"
+        android:layout_width="178dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="32dp"
+        android:text="Allow notifications"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSetting"
+        android:layout_width="178dp"
+        android:layout_height="62dp"
+        android:text="Settings"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonNotify"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="200dp"
+        android:layout_height="32dp"
+        android:indeterminate="false"
+        android:indeterminateBehavior="repeat"
+        android:indeterminateDrawable="@android:drawable/progress_indeterminate_horizontal"
+        android:max="3"
+        android:maxHeight="20dip"
+        android:progress="0"
+        android:progressDrawable="@android:drawable/progress_horizontal"
+        android:progressTint="#03A9F4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewheading" />
+
+    <TextView
+        android:id="@+id/textViewProgress"
+        android:layout_width="198dp"
+        android:layout_height="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
