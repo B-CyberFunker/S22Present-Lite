@@ -1,5 +1,10 @@
-# CATS22Present
+#CATS22Present-Lite
 
-Displays content on the secondary screen. Designed for the CAT S22 but technically compatible with any android 11+ device. 
-Designed to be bundled in with the S22 Tweaker magisk module https://github.com/B-CyberFunker/CATS22Tweaker on aftermarket ROMs.
-Will fight any existing presentations, including the stock S22 one displayed when the screen locks. 
+Displays content on the secondary screen. Designed for the CAT S22 but technically compatible with any android 11+ device. This version is specifically for the stock ROM.
+
+It can:
+
+- Display the time/date on the secondary display.
+- Display a notification text and title on the secondary display.
+- Display a visualiser.
+- Be customized in some ways including background, visualiser style, and font, as well as presets for all 3.
